@@ -113,7 +113,7 @@ def handle_photo():
                                                     'link': [filename],
                                                     'text': [info],
                                                     'type': ['image']
-                                                    }
+                                                    }, "title":"sixsixsix"
                         }
             date_list.append(date)
             list_info.append(new_dict)
@@ -122,14 +122,14 @@ def handle_photo():
             list_info[index]['arr']['link'].append(filename)
             list_info[index]['arr']['text'].append(info)
             list_info[index]['arr']['type'].append('image')
-            
+            list_info[index]['title']= 'sixsixsix'
         else:  # 不是同一个日期创建一个新的 dict
             new_dict = {"date": year_month, "arr":{'year': date.year,
                                                    'month': date.month,
                                                    'link': [filename],
                                                    'text': [info],
                                                    'type': ['image']
-                                                   }
+                                                   }, "title":"sixsixsix"
                         }
             date_list.append(date)
             list_info.append(new_dict)
